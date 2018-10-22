@@ -1,0 +1,254 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 20px;
+
+}
+nav {
+    display: block;
+    position: fixed;
+    background-color: #f44336;
+    color: #fff;
+    width: 100%;
+    top: 0;
+    height: 10%;
+}
+nav ul {
+    display: none;
+} 
+.fas {
+    color: #fff;
+    padding: 20px;
+    
+}  
+button {
+    border: none;
+    background-color: #f44336;
+}                                                               
+.logo {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -45px;
+    font-weight: lighter;
+}
+                                                                    /*Showcase*/
+main {
+    display: block;
+    width: 100%;
+}   
+h1 {
+    color: #000;
+    font-size: 70px;
+    margin-top: 100px;
+    margin-left: 5%;
+}    
+article {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 20%;
+}  
+h2 {
+    color: #f44336;
+    font-size: 50px;
+}    
+article hr {
+    width: 50px;
+    border: 5px solid red;
+    border-radius: 4px;
+    margin: 20px 0;
+}  
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+}
+section.showcase-img img {
+    object-fit: cover;
+    height: 450px;
+}
+                                                                    /*Designers*/
+ .designers h2 {
+    color: #000;
+    font-size: 25px;
+    padding: 10px;
+ } 
+ .designers h4 {
+    color: #a9a9a9;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px;
+ }
+ .team {
+    background-color: #f1f1f1;
+ }     
+ .team p {
+    padding: 10px;
+ }  
+                                                                    /*Packages*/
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding: 0px;
+}
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+.price .gray {
+    background-color: #616161;
+    color: #fff;
+    font-size: 25px;
+}
+.price .red {
+    background-color: #f44336;
+    color: #fff;
+    font-size: 25px;
+}
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.price h4 {
+    font-size: 30px;
+}
+.price h6 {
+    color: #a9a9a9;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.button.gray {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+.button.red {
+    background-color: #f44336;
+    border: none;
+    color: #fff;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+                                                                    /*Contact*/
+.contact input {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 15px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #000;
+    color: #fff;
+}
+                                                                    /*Footer*/
+footer {
+    text-align: center;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 15px;
+    padding: 21px;
+}
+                                                                    /*Media Queries*/
+@media (min-width: 1024px) {
+    nav {
+        display: inline-block;
+        width: 20%;
+        height: 100%;
+    }
+    nav ul {
+        list-style-type: none;
+        display: block;
+    }
+    nav li {
+        padding: 10px; 
+        display: block;
+        width: 80%;
+    }
+    nav li:hover {
+        background-color: #fff; 
+    }
+    nav li a {
+        display: block;
+        color: #fff;
+        font-size: 21px;
+        text-align: justify;
+        text-decoration: none;
+        font-weight: normal;
+    }
+    nav li:hover a {
+        color: #000;
+    }
+    main {
+        display: inline-block;
+        width: 80%;
+        margin-left: 20%;
+        top: 0;
+    }
+    article {
+        margin-bottom: 10%;
+    }
+    .fas {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+    .logo {
+        font-size: 30px;
+        padding: 10px;
+        margin-top: 40%;
+        margin-left: 40px;
+        text-align: justify;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+    .showcase-img, .pricing {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    section.showcase-img img {
+        opacity: 0.9;
+    }
+    section.showcase-img img:hover {
+    opacity: 1;
+}
+    footer {
+        background-color: #000;
+        color: #fff;
+        text-align: right;
+    }
+}
